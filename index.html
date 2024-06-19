@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fa-IR">
+    
+<head>
+    
+<script type="text/javascript">
+
+// Disable right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') ||
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
+
+ </script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Ali Dehghan">
+    <link href="index.scss" rel="stylesheet"/>
+    <title>Devices</title>
+
+</head>
+
+<div class="device">
+  <div class="device__a">
+    <div class="device__a-1"></div>
+    <div class="device__a-2"></div>
+  </div>
+  <div class="device__b"></div>
+  <div class="device__c"></div>
+  <div class="device__d"></div>
+  <div class="device__e"></div>
+  <div class="device__f"></div>
+  <div class="device__g"></div>
+</div>
